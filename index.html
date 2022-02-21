@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <input
+          type="text"
+          id="zone_name"
+          value="Назва робочої зони"
+          class="zone__name"
+        />
+        <button onclick="createBtn()" class="create_btn">Додати дошку</button>
+
+        <select name="" id="work_type" class="work__type">
+          <option value="board">Дошка</option>
+          <option value="calendar">Календар</option>
+        </select>
+
+        <button onclick="filterBtn()" class="filter_btn">Фільтр</button>
+        <button onclick="settingBtn()" class="settings_btn">
+          Налаштування
+        </button>
+        <button onclick="resetBtn()" class="reset_btn">Reset</button>
+        <div class="header_icon_item">
+          <ul class="user_icon"></ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main__inner">
+        <div class="board">
+          <div class="board__item">
+            <span contenteditable="true" class="title">Введіть назву</span>
+            <div class="list">
+              <div class="list__item" draggable="true">Стартова карточка</div>
+            </div>
+            <div class="form">
+              <textarea class="textarea"></textarea>
+            </div>
+            <div class="add_btn"><span> + </span> Додати карточку</div>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="board__item">
+            <span contenteditable="true" class="title">Введіть назву</span>
+            <div class="list">
+              <div class="list__item" draggable="true">Стартова карточка</div>
+            </div>
+
+            <div class="form">
+              <textarea class="textarea"></textarea>
+            </div>
+
+            <div class="add_btn"><span> + </span> Додати карточку</div>
+          </div>
+        </div>
+        <div class="board">
+          <div class="board__item">
+            <span contenteditable="true" class="title">Введіть назву</span>
+            <div class="list">
+              <div class="list__item" draggable="true">Стартова карточка</div>
+            </div>
+
+            <div class="form">
+              <textarea class="textarea"></textarea>
+            </div>
+
+            <div class="add_btn"><span> + </span> Додати карточку</div>
+          </div>
+        </div>
+      </div>
+      <div class="main__inner_newdiv"></div>
+      <div class="field"></div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
